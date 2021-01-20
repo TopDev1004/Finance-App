@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/Finance-App/static/css/main.960ccd19.chunk.css",
+    "main.js": "/Finance-App/static/js/main.d1b208fc.chunk.js",
+    "main.js.map": "/Finance-App/static/js/main.d1b208fc.chunk.js.map",
+    "runtime-main.js": "/Finance-App/static/js/runtime-main.ecfa98e6.js",
+    "runtime-main.js.map": "/Finance-App/static/js/runtime-main.ecfa98e6.js.map",
+    "static/js/2.be890ab9.chunk.js": "/Finance-App/static/js/2.be890ab9.chunk.js",
+    "static/js/2.be890ab9.chunk.js.map": "/Finance-App/static/js/2.be890ab9.chunk.js.map",
+    "index.html": "/Finance-App/index.html",
+    "precache-manifest.09fc48ee6571b490720f3d858955f20f.js": "/Finance-App/precache-manifest.09fc48ee6571b490720f3d858955f20f.js",
+    "service-worker.js": "/Finance-App/service-worker.js",
+    "static/css/main.960ccd19.chunk.css.map": "/Finance-App/static/css/main.960ccd19.chunk.css.map",
+    "static/js/2.be890ab9.chunk.js.LICENSE.txt": "/Finance-App/static/js/2.be890ab9.chunk.js.LICENSE.txt",
+    "static/media/1111.jpg": "/Finance-App/static/media/1111.2400a172.jpg",
+    "static/media/2222.jpg": "/Finance-App/static/media/2222.4c40bf17.jpg",
+    "static/media/3333.jpg": "/Finance-App/static/media/3333.2d301a1c.jpg",
+    "static/media/dashboard-left.png": "/Finance-App/static/media/dashboard-left.2521deed.png",
+    "static/media/editPage.png": "/Finance-App/static/media/editPage.4f92860c.png",
+    "static/media/features.jpg": "/Finance-App/static/media/features.31ea4d44.jpg",
+    "static/media/headerImg1.png": "/Finance-App/static/media/headerImg1.9da0fed1.png",
+    "static/media/headerImg3.png": "/Finance-App/static/media/headerImg3.ba372862.png",
+    "static/media/logo.jpg": "/Finance-App/static/media/logo.44142d94.jpg",
+    "static/media/settings-bottom.png": "/Finance-App/static/media/settings-bottom.c7e363dd.png",
+    "static/media/signInImg.png": "/Finance-App/static/media/signInImg.bc13cc09.png",
+    "static/media/signUpImg.gif": "/Finance-App/static/media/signUpImg.47383c75.gif",
+    "static/media/steps.png": "/Finance-App/static/media/steps.b556c4f4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ecfa98e6.js",
+    "static/js/2.be890ab9.chunk.js",
+    "static/css/main.960ccd19.chunk.css",
+    "static/js/main.d1b208fc.chunk.js"
+  ]
+}
