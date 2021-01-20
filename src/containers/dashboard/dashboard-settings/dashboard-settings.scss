@@ -1,0 +1,136 @@
+.dashboard-settings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 4rem;
+    margin: 6rem 0 3rem 0;
+    min-height: 84vh;
+    border-radius: 2rem;
+    background-color: #EEF4FF;
+    p{color:#4122b1; font-size: 1.8rem;}
+    h4{ font-weight: 600; color: #6d6e85; padding-bottom: 1rem;}
+    @media only screen and (max-width:70em) {margin-top: 10rem; padding: 2rem;}
+    input{
+        width: -webkit-fill-available;
+        // margin-left: 3rem;
+        // margin-right: 3rem;
+        margin-bottom: 1.5rem;
+        padding: 0rem 1rem .5rem 1rem;
+        border: none;
+        border-bottom: 1px solid  rgb(140, 167, 255);
+        font-size: inherit;
+        outline: none;
+        border-radius: .5rem;
+        &::placeholder{font-weight: lighter; font-family: inherit; color: rgb(184, 184, 184);}
+        &:focus{
+            border-bottom: 1px solid rgb(34, 86, 255); 
+        }
+    }
+    &-categories{
+        &-items{
+        width: 100%;
+        padding: 3rem;
+        h4{padding: 0 1rem;}
+        }
+        &-item{
+            display: flex;
+            align-items: center;
+            padding: 1.5rem;
+            border-radius: .5rem;
+            &:nth-child(odd){
+                background-color: #EEF4FF;
+            }
+        }
+        &-total{
+            display: flex; 
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: whitesmoke;
+            padding: 1rem;
+            background-color:#6266EA;
+            width: 100%;
+            h1,h2{font-weight: 500; color: white;}
+            border-radius: 2rem 0 0 2rem;
+            @media only screen and (max-width:30em) {border-radius: 2rem 2rem 0 0;}
+        }
+    }
+}
+
+.dashboard-edit{
+    &-categories{
+        h3{color: rgb(29, 39, 61); font-weight: 600; padding-bottom: 3rem;}
+        button{background-color:#5E33FF; color: white; border: none;}
+        display: flex;
+        justify-content: space-evenly;
+        background-color: white;
+        margin: 2rem 1rem;
+        border-radius: 2rem;
+        @media only screen and (max-width:30em) {flex-wrap: wrap;}
+        &-add-box{
+            padding: 3rem;
+            border-right: 1px solid gray;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            input{margin-bottom: 4rem; padding-bottom: 1rem;}
+            width: 50%;
+            @media only screen and (max-width:70em) {
+                width: 90%;
+                width: auto; 
+                border: none;
+            }
+        }
+        &-items{
+            padding: 3rem;
+            @media only screen and (max-width:70em) {width: 90%; padding: 3rem 0; width: auto;}
+            &-body{
+                max-height: 21rem;
+                overflow-y: scroll;
+            &::-webkit-scrollbar {width: 3px;}
+            &::-webkit-scrollbar-track { background: transparent;border-radius: 1rem;}
+            &::-webkit-scrollbar-thumb {background: transparent; border-radius: 1rem; @media only screen and (max-width:70em) {background: gainsboro;}}
+            &:hover{
+                &::-webkit-scrollbar-thumb {background: gainsboro;}
+                }
+            }
+        }
+        &-item{
+            span{cursor: pointer; color: #5E33FF; font-size: 3rem; font-weight: 500; padding: .5rem;}
+        }
+    }
+    &-bottom{
+        display: flex;
+        justify-content: space-evenly;
+        @media only screen and (max-width:70em) {flex-wrap: wrap;}
+        &-left{
+            flex: 0 0 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            @media only screen and (max-width:70em) {flex: auto;}
+            &-unit{
+                flex: 1;
+                background-color: white;
+                border-radius: 2rem;
+                padding: 3rem;
+                padding-bottom: 1.5rem;
+                margin: 1.5rem;
+            }
+        }
+        &-right{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 1rem;
+            align-items: center;
+            img{width: 80%; padding-bottom: 2rem;}
+            button{padding: 1.5rem 4rem; width: 35%; @media only screen and (max-width:35em){width: auto;}}
+            @media only screen and (max-width:70em) {
+                flex-direction: column-reverse;
+                img{width: 60%; padding-top: 2rem; padding-bottom: 0;}
+                button{padding: 2rem 5rem; margin: 2rem auto;}
+            }
+        }
+    }
+}

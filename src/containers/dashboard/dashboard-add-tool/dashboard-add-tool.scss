@@ -1,0 +1,59 @@
+.budget-add-section{
+    margin: 2rem;
+    padding:3rem 6%;
+    width: min-content;
+    border-radius: 1rem;
+    margin: 1rem auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    z-index: 150;
+
+    h2{
+        color: #525252;
+        font-style: italic;
+        margin: 3rem 0;
+        display: inline;
+    }
+    h3{
+        display: inline-flex;
+        color: red;
+        font-size: 2.1rem;
+        font-style: italic;
+        font-weight: lighter;
+    }
+    h4{
+        display: inline-flex;
+        color: green;
+        font-size: 2.1rem;
+        font-style: italic;
+        font-weight: lighter;
+    }
+}
+.budget-add-submit{
+    min-width: 10%;
+    padding: 1rem 2rem;
+    margin: 3rem 1rem;
+    border-radius: 1rem;
+}
+.budget-add-body{
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: center;
+    margin: auto;
+}
+
+.budget-input-btn{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+}
+
+.add-tool-body{
+    display: flex;
+    background-color: white;
+    z-index: 100;
+}

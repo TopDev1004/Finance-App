@@ -1,0 +1,197 @@
+
+// COLOR VARIABLES
+$color-primary: #1194cc;
+$color-primary-light: #CDEBF8;
+$color-primary-dark:#134b63;
+
+$color-secondary: #F277A4;
+$color-secondary-light: #fccdde;
+$color-secondary-dark:  #ec1d69;
+
+$color-grey-light-1: #e4e4e4;
+$color-grey-light-2: #bdbdbd;
+
+$color-grey-dark-1: #444444;
+$color-grey-dark-2: #6d6d6d;
+$color-grey-dark-3: #9c9c9c;
+
+//mediaqueries breakpoints
+$bp-largest: 80em;
+$bp-large: 64em;  
+$bp-medium: 47em; 
+$bp-small: 36.5em; 
+$bp-smaller: 25em; 
+
+// FONT VARIABLES
+$font-primary: 'Raleway', sans-serif;
+$font-headers: 'Acme', sans-serif;
+
+// SHAHOW VARIABLES
+$shadow-light: 0 1rem 4rem rgba(90, 90, 90, 0.295);
+$shadow-lighter: 0 1rem 4rem rgba(255, 255, 255, 0.116);
+$shadow-dark:0 1rem 4rem rgba(255, 255, 255, 0.349);
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: initial;
+}
+
+::selection {
+    color: white;
+    background: $color-secondary;
+  }   
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    @media only screen and (max-width:$bp-largest) {font-size: 55%;}
+    @media only screen and (max-width:$bp-large) {font-size: 50%;}
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    color:$color-grey-dark-2;
+    font-weight: 400;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    overflow-x: hidden;
+    // display: grid;
+    // grid-template-columns: 10rem repeat(10,1fr);
+    // grid-template-rows: 10rem repeat(2,70rem) repeat(5,min-content);
+    // @media only screen and (max-width:$bp-small) {
+    //     grid-template-columns: 7rem repeat(10,1fr);
+    //     grid-template-rows: 7rem repeat(2,68rem) repeat(5,min-content);
+    // }
+}
+
+.btn{
+    height: min-content;
+    text-decoration: none;
+    transition: all .3s;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    outline: none;
+    cursor: pointer;
+    border-radius: .5rem;
+    padding: 1rem 2rem;
+    border: none;
+    &-four{
+        border: 2px solid transparent;
+        color: white;
+        background-color: $color-secondary;
+        font-weight: bolder;
+        &:hover{
+            border: 2px solid $color-secondary;
+            background-color: transparent;
+            color: $color-secondary;
+        }
+    }
+    &-three{
+        border: none;
+        text-align: center;
+        color: currentColor;
+        padding: 0;
+        font-weight: bold;
+        &::after{
+            width: 1rem;
+            margin: auto;
+            content: "";
+            display: block;
+            height: 1rem;
+            border-radius: 100px;
+            background-color: currentColor;
+            text-align: center;
+            transition: all .3s;
+            opacity: 0;
+            transform: translateY(1rem);
+        }
+        &:hover{
+            &::after{opacity: 1; transform: translateY(0);}  
+        }
+    }
+    &-primary{
+        border: 2px solid $color-secondary;
+        background-color: transparent;
+        color: $color-secondary;
+        font-weight: bolder;
+        &:hover{
+            color: white;
+            background-color: $color-secondary;
+        }
+    }
+    &-secondary{
+        color: $color-secondary;
+        &::after{
+            width: 1rem;
+            margin: auto;
+            content: "";
+            display: block;
+            height: 1rem;
+            border-radius: .5rem;
+            background-color: $color-secondary;
+            text-align: center;
+            transition: all .3s;
+            opacity: 1;
+            transform: translateY(0);
+        }
+       
+    }
+}
+
+
+.h1{
+    font-family: $font-primary;
+    letter-spacing: 2px;
+    font-size: 5.5rem;
+    line-height: 130%;
+    font-weight: 400;
+    // color: $color-grey-dark-1;
+    color:rgb(24, 24, 73);
+}
+.h2{
+    font-family: $font-headers;
+    color: $color-grey-dark-3;
+    font-weight:600;
+    letter-spacing: 1px;
+    font-size: 5.5rem;
+    padding-bottom: 2rem;
+    @media only screen and (max-width:$bp-medium) {font-size: 3.5rem;}
+}
+.h3{
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    color: $color-grey-dark-2;
+    margin: 1rem 0;
+}
+.h4{
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: $color-grey-dark-2;
+}
+
+p{
+    font-size: 1.6;
+    font-weight: 500;
+    color: $color-grey-dark-3;
+}
+.heading-5{
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    // @media only screen and (max-width:$bp-medium) {font-size: 1.6rem;}
+}
+
+
+.padding-3rem{
+    padding: 3rem;
+}
+
+.color-red{color: rgb(240, 69, 50); padding: .5rem;}
+.color-green{color: rgb(44, 184, 86);  padding: .5rem;}
+.margin-bottom-3{margin-bottom: 3rem;}

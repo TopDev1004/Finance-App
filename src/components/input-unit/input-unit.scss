@@ -1,0 +1,33 @@
+.budget-input-unit{
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.budget-input{
+    outline: invert;
+    padding: 1rem;
+    font-family: inherit;
+    font-size: inherit;
+    border: 2px solid transparent;
+    border-bottom: 2px solid #beeff0;
+    border-radius: 1rem;
+    background-color: white;
+    &:focus{
+        outline: none;
+        border-bottom: 2px solid #32426d;
+    }
+    &-label{
+        padding: 1rem;
+        font-size: 1.8rem;
+        color: #32606d;
+        
+    }
+    &::placeholder{
+        color: #cab9af;
+        font-style: italic;
+    }
+}

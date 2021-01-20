@@ -1,0 +1,49 @@
+.dashboard-right{
+    height: 100vh;
+    flex: 0 0 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:0 2rem;
+    z-index: 100;
+    transition: all .4s ease-in-out;
+    @media only screen and (max-width:70em) {width:30rem; position: fixed; top:0; right:0; background-color: white; border-left: 1px solid palevioletred; transform: translateX(100%);}
+    
+    &-notifications{
+        max-height: 35%;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {width: 3px;}
+        &::-webkit-scrollbar-track { background: transparent;border-radius: 1rem;}
+        &::-webkit-scrollbar-thumb {background: transparent; border-radius: 1rem;}
+        &:hover{
+            &::-webkit-scrollbar-thumb {background: gainsboro;}
+        }
+        padding:0 2rem;
+        h3{display: flex; align-items: center; font-weight: 700; color: rgb(82, 86, 109);}
+        &-1{padding: 1.5rem; background-color: #FFEBF5;margin: 1rem;font-weight: 500; border-radius: .5rem;}
+        &-2{padding: 1.5rem; background-color: #fffdda;margin: 1rem;font-weight: 500; border-radius: .5rem;}
+        &-3{padding: 1.5rem; background-color: #EAE7FF;margin: 1rem;font-weight: 500; border-radius: .5rem;}
+    }
+    &-pie-chart{
+        width: 75%;
+        padding: 2rem;
+        height: 13rem;
+        margin: 0 auto;
+    }
+    &-pie-chart-box{display: flex; flex-direction: column;}
+    &-pie-chart-caption{
+        font-size: 1.3rem;
+        margin: 1rem 3rem;
+        span:after {
+            display: inline-block;
+            content: "";
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-right: 0.5rem;
+            border-radius: 2px;
+            background: currentColor;
+        }
+    }
+}
+
+

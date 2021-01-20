@@ -1,0 +1,15 @@
+.nav-items{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    list-style: none;
+    & >* {
+        margin: 0 2.5rem;
+        @media only screen and (max-width:47em) {margin: 0 1rem;}
+    }
+    
+    @media only screen and (max-width:30em) {
+        display: none;
+    }
+}

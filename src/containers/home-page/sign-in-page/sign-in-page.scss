@@ -1,0 +1,99 @@
+.sign-in-page{
+    min-height: 80vh;
+    margin: auto;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    h1{
+        text-align: center;
+        color: #e9884b;
+        font-weight: bolder;
+    }
+}
+.sign-in{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    &-message{
+        color: red;
+    }
+    &-btn{
+        width: 60%;
+        margin: auto;
+        text-align: center;
+    }
+    &-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2rem;
+        padding: 2.5rem;
+        background: rgba(255, 255, 255, 0.514);
+        a{
+            color: #324a6d;
+        }
+        
+        &-title{
+            text-align: center;
+            color: #324a6d;
+            padding: 1.5rem;
+            padding-top: .5rem;
+        }
+        &-fields{
+            margin:1rem auto;
+            padding: 1rem .5rem;
+            width: 80%;
+            input {
+                box-sizing: border-box;
+                border: 2px solid transparent;
+                outline:none;
+                background: none;
+                color: rgb(124, 124, 124);
+                padding:1rem 3rem;
+                font-size: inherit;
+                border-radius: .5rem;
+                transition: all .2s;
+                &:focus{
+                    border: 2px solid rgb(104, 182, 255);
+                }
+                &::placeholder{
+                    color: rgb(165, 165, 165);
+                }
+              }
+        
+        }
+        &-field{
+            margin-bottom: 3rem;
+            border-radius: .5rem;
+            background-color: rgb(227, 240, 255);
+        }
+        
+    }
+    &-img{
+        width: 55%;
+        @media only screen and (max-width:50em) {width: 70%;}
+        img{
+          width: 100%;  
+        }
+    }
+}
+
+
+
+.sign-in-to-sign-up{
+    text-align: center;
+    padding: 2rem;
+    &-link{
+        text-decoration: underline;
+        color: #324d6d;
+        
+    }
+}
